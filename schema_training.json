@@ -1,0 +1,28 @@
+{	"SampleFileName": "houserent_25052020_120000.csv",
+	"LengthOfDateStampInFile": 8,
+	"LengthOfTimeStampInFile": 6,
+	"NumberofColumns" : 21,
+	"ColName": {
+				"id" : "Integer",
+				"url" : "varchar",
+				"region" : "varchar",
+				"region_url" : "varchar",
+				"price" : "float",
+				"type" : "varchar",
+				"sqfeet" : "Integer",
+				"beds" : "Integer",
+				"baths": "float",
+				"cats_allowed": "Integer",
+				"dogs_allowed" : "Integer",
+				"smoking_allowed" : "Integer",
+				"wheelchair_access" : "Integer",
+				"electric_vehicle_charge" : "Integer",
+				"comes_furnished": "Integer",
+				"laundry_options": "varchar",
+				"parking_options" : "varchar",
+				"image_url" : "varchar",
+				"lat" : "float",
+				"long" : "float",
+				"state" : "varchar"
+	}
+}

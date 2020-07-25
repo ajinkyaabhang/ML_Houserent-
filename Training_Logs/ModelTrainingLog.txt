@@ -1,0 +1,40 @@
+2020-06-13/10:29:50		Start of Training
+2020-06-13/10:29:50		Entered the get_data method of the Data_Getter class
+2020-06-13/10:29:50		Data Load Successful.Exited the get_data method of the Data_Getter class
+2020-06-13/10:29:50		Entered the dropOutliers method of the Preprocessor class
+2020-06-13/10:29:56		Entered the separate_label_feature method of the Preprocessor class
+2020-06-13/10:29:56		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2020-06-13/10:29:56		Entered the elbow_plot method of the KMeansClustering class
+2020-06-13/10:30:50		The optimum number of clusters is: 3 . Exited the elbow_plot method of the KMeansClustering class
+2020-06-13/10:30:50		Entered the create_clusters method of the KMeansClustering class
+2020-06-13/10:30:54		Entered the save_model method of the File_Operation class
+2020-06-13/10:30:54		Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2020-06-13/10:30:54		succesfully created 3clusters. Exited the create_clusters method of the KMeansClustering class
+2020-06-13/10:30:54		Entered the get_best_model method of the Model_Finder class
+2020-06-13/10:30:54		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-13/10:33:39		Random Forest best params: {'max_depth': 80, 'max_features': 5, 'n_estimators': 1000}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-13/10:33:39		r2_score for Random Forest:0.5868485110271094
+2020-06-13/10:33:39		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-13/10:35:29		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-13/10:35:30		r2_score for XGBoost:0.5093248010914319
+2020-06-13/10:35:30		Entered the save_model method of the File_Operation class
+2020-06-13/10:35:34		Model File RandomForestReg2 saved. Exited the save_model method of the Model_Finder class
+2020-06-13/10:35:34		Entered the get_best_model method of the Model_Finder class
+2020-06-13/10:35:34		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-13/10:52:57		Random Forest best params: {'max_depth': 80, 'max_features': 5, 'n_estimators': 1000}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-13/10:53:02		r2_score for Random Forest:0.8204959089174974
+2020-06-13/10:53:02		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-13/11:14:34		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-13/11:14:35		r2_score for XGBoost:0.7681017806990083
+2020-06-13/11:14:35		Entered the save_model method of the File_Operation class
+2020-06-13/11:15:33		Model File RandomForestReg1 saved. Exited the save_model method of the Model_Finder class
+2020-06-13/11:15:33		Entered the get_best_model method of the Model_Finder class
+2020-06-13/11:15:33		Entered the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-13/11:40:20		Random Forest best params: {'max_depth': 90, 'max_features': 5, 'n_estimators': 1000}. Exited the get_best_params_for_random_forest method of the Model_Finder class
+2020-06-13/11:40:30		r2_score for Random Forest:0.8446009322560355
+2020-06-13/11:40:30		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-13/12:02:18		XGBoost best params: {'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 200}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2020-06-13/12:02:19		r2_score for XGBoost:0.8005318213169241
+2020-06-13/12:02:20		Entered the save_model method of the File_Operation class
+2020-06-13/12:02:45		Model File RandomForestReg0 saved. Exited the save_model method of the Model_Finder class
+2020-06-13/12:02:45		Successful End of Training

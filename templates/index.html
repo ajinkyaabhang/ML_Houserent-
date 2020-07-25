@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>House Rent Prediction</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Predict your House Rent</h1>
+
+    <div class="form">
+        <form style="text-align: center" action="/predict_new" method="POST">
+			<style>
+				body {
+  						background-color: #91d4ba;
+					}
+			</style>
+			<label>SqFeet
+            <input type="number" name="sqfeet" id="sqfeet" placeholder="sqfeet"><br><br>
+			<label>Beds
+			<input type="number" name="beds" id="beds" placeholder="beds"><br><br>
+			<label>Baths
+			<input type="float" name="baths" id="baths" placeholder="baths"><br><br>
+			<label for="cats_allowed">Are cats allowed</label>
+				<select id="cats_allowed" name="cats_allowed">
+					<option value="Yes">Yes(1)</option>
+					<option value="No">No(0)</option>
+				</select></br>
+			<label for="smoking_allowed">Is smoking allowed</label>
+				<select id="smoking_allowed" name="smoking_allowed">
+					<option value="Yes">Yes(1)</option>
+					<option value="No">No(0)</option>
+				</select><br><br>
+			<label for="wheelchair_access">Wheelchair access</label>
+				<select id="wheelchair_access" name="wheelchair_access">
+					<option value="Yes">Yes(1)</option>
+					<option value="No">No(0)</option>
+				</select></br>
+			<label for="electric_vehicle_charge">Electric Vehicle Charge</label>
+				<select id="electric_vehicle_charge" name="electric_vehicle_charge">
+					<option value="Yes">Yes(1)</option>
+					<option value="No">No(0)</option>
+				</select></br>
+			<label for="comes_furnished">Comes furnished</label>
+				<select id="comes_furnished" name="comes_furnished">
+					<option value="Yes">Yes(1)</option>
+					<option value="No">No(0)</option>
+				</select><br><br>
+				<label>Latitude
+            <input type="float" name="lat" id="lat" placeholder="lat"></br>
+			<label>Longitude
+            <input type="float" name="long" id="long" placeholder="long"><br><br>
+			<label for="parking_options">Parking options</label>
+				<select id="parking_options" name="parking_options">
+					<option value="parking_options_1">carport</option>
+					<option value="parking_options_2">detached garage</option>
+					<option value="parking_options_3">no parking</option>
+					<option value="parking_options_4">off-street parking</option>
+					<option value="parking_options_5">street parking</option>
+					<option value="parking_options_6">valet parking</option>
+					<option value="parking_options_7">attached garage</option>
+				</select></br>
+			<label for="laundry_options">Laundry options</label>
+				<select id="laundry_options" name="laundry_options">
+					<option value="laundry_options_1">laundry on site</option>
+					<option value="laundry_options_2">no laundry on site</option>
+					<option value="laundry_options_3">w/d hookups</option>
+					<option value="laundry_options_4">w/d in unit</option>
+					<option value="laundry_options_5">laundry in bldg</option>
+				</select><br><br>
+
+		            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+
+<div class="content">
+    <h1 style="text-align: center">House Rent Prediction from CSV File</h1>
+		<div class="form">
+			<form style="text-align: center" action="/predict" method="POST">
+				<label for="Default_File_Predict">Default File Predict</label>
+					<select id="Default_File_Predict" name="Default_File_Predict">
+						<option value="Prediction_Batch_files">Prediction_Batch_files</option>
+					</select>
+				<input type="submit" value="Predict">
+			</form>
+    </div>
+</div>
+
+{% endblock %}
